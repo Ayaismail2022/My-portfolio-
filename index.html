@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="Aya Ismail - Frontend Developer Portfolio showcasing modern web projects, responsive design, and UI/UX skills."
+    />
+    <meta
+      name="keywords"
+      content="Frontend Developer, Web Developer, HTML, CSS, JavaScript, Portfolio"
+    />
+    <meta name="author" content="Aya Ismail" />
+    <title>Aya Ismail - Portfolio</title>
+    <link rel="stylesheet" href="./style/all.min.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <a href="#home" class="logo">Portfolio</a>
+      <i class="fa-solid fa-bars" id="menu-icon"></i>
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+        <a href="./loader.html" class="nav-link light" style="--i: 6"
+          >Light-mode</a
+        >
+      </nav>
+    </header>
+
+    <!-- Home / Hero Section -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3 class="font-cursive">Hello, It's Me</h3>
+        <h1 class="font-cursive">Aya Ismail Naguib</h1>
+        <h3>
+          And I'm a
+          <span id="typed-text" style="color: var(--main-color)"></span>
+        </h3>
+        <p class="font-cursive">
+          I'm a Front-end web developer with extensive experience for over 1
+          year. Expertise in website design, high-performance applications, and
+          creating high-quality digital experiences.
+        </p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/profile.php?id=100053460234290"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://wa.me/201151498440"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="http://www.linkedin.com/in/aya-ismail-a5a4102a7"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <a href="#about" class="btn">More about me</a>
+      </div>
+      <div class="img-wrap">
+        <div class="img-box">
+          <img src="./imgs/My pic.jpg" alt="Aya" />
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="about-text">
+        <h2 class="sub-title font-cursive">About <span>me</span></h2>
+        <h4
+          style="
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #fff;
+            font-family: cursive;
+          "
+        >
+          Frontend web developer!
+        </h4>
+        <p
+          class="font-cursive"
+          style="font-size: 18px; line-height: 1.6; color: #ccc"
+        >
+          I specialize in creating dynamic, responsive, and visually engaging
+          interfaces. I love translating complex UI/UX designs into high-quality
+          code. I build seamless digital experiences that feel intuitive and
+          enjoyable for users. Passionately focusing on clean architecture and
+          smooth animations.
+        </p>
+        <a href="#portfolio" class="btn" style="margin-top: 30px"
+          >View Projects</a
+        >
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+      <h2 class="sub-title font-cursive">My <span>Services</span></h2>
+      <div class="services-list">
+        <div>
+          <i
+                class="fa-solid fa-code"
+                style="color: cyan; margin-bottom: 30px; margin-left: 90px; font-size: 40px"
+              ></i>
+          <h2 class="font-cursive">Web Design</h2>
+          <p>
+            Modern, clean, and visually appealing designs matching your brand
+            identity and requirements.
+          </p>
+        </div>
+        <div>
+          <i
+                class="fa-solid fa-laptop-code"
+                style="color: cyan; margin-bottom: 30px; margin-left: 90px; font-size: 40px"
+              ></i>
+          <h2 class="font-cursive">Responsive</h2>
+          <p>
+            Websites adapting smoothly to all mobile, tablet, and desktop
+            screens for a consistent experience.
+          </p>
+        </div>
+        <div>
+          <i class="fa-solid fa-rocket" style="color: cyan; margin-left: 90px; margin-bottom: 30px; font-size: 40px"></i>
+          <h2 class="font-cursive">Modern Dev</h2>
+          <p>
+            Interactive web applications using the latest technologies focusing
+            on performance and UX.
+          </p>
+        </div>
+        <div>
+          <i class="fa-solid fa-file-code" style="margin-left: 90px; color: cyan; margin-bottom: 30px; font-size: 40px"></i>
+          <h2 class="font-cursive">Landing Pages</h2>
+          <p>
+            High-converting landing pages optimized for speed and user
+            engagement to support your goals.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2 class="sub-title font-cursive">My <span>Skills</span></h2>
+      <div class="skills-container">
+        <!-- Technical Skills -->
+        <div class="skill-box">
+          <h3 class="font-cursive">Technical Skills</h3>
+          <div class="bar">
+            <div class="info"><span>HTML</span><span>95%</span></div>
+            <div class="progress-line"><span data-width="95%"></span></div>
+          </div>
+          <div class="bar">
+            <div class="info"><span>CSS / SCSS</span><span>90%</span></div>
+            <div class="progress-line"><span data-width="90%"></span></div>
+          </div>
+          <div class="bar">
+            <div class="info"><span>JavaScript</span><span>80%</span></div>
+            <div class="progress-line"><span data-width="80%"></span></div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <span>Modern JS Frameworks</span><span>60%</span>
+            </div>
+            <div class="progress-line"><span data-width="60%"></span></div>
+          </div>
+          <div class="bar">
+            <div class="info"><span>Python</span><span>90%</span></div>
+            <div class="progress-line"><span data-width="90%"></span></div>
+          </div>
+        </div>
+        <!-- Professional Skills -->
+        <div class="skill-box">
+          <h3 class="font-cursive">Professional Skills</h3>
+          <div class="radial-bars">
+            <div class="radial-bar">
+              <svg viewBox="0 0 100 100">
+                <circle class="circle-bg" cx="50" cy="50" r="40"></circle>
+                <circle
+                  class="circle-progress"
+                  cx="50"
+                  cy="50"
+                  r="40"
+                  data-percent="70"
+                ></circle>
+              </svg>
+              <div class="percentage">70%</div>
+              <div class="skill-name">Creativity</div>
+            </div>
+            <div class="radial-bar">
+              <svg viewBox="0 0 100 100">
+                <circle class="circle-bg" cx="50" cy="50" r="40"></circle>
+                <circle
+                  class="circle-progress"
+                  cx="50"
+                  cy="50"
+                  r="40"
+                  data-percent="75"
+                ></circle>
+              </svg>
+              <div class="percentage">75%</div>
+              <div class="skill-name">Communication</div>
+            </div>
+            <div class="radial-bar">
+              <svg viewBox="0 0 100 100">
+                <circle class="circle-bg" cx="50" cy="50" r="40"></circle>
+                <circle
+                  class="circle-progress"
+                  cx="50"
+                  cy="50"
+                  r="40"
+                  data-percent="95"
+                ></circle>
+              </svg>
+              <div class="percentage">95%</div>
+              <div class="skill-name">Teamwork</div>
+            </div>
+            <div class="radial-bar">
+              <svg viewBox="0 0 100 100">
+                <circle class="circle-bg" cx="50" cy="50" r="40"></circle>
+                <circle
+                  class="circle-progress"
+                  cx="50"
+                  cy="50"
+                  r="40"
+                  data-percent="90"
+                ></circle>
+              </svg>
+              <div class="percentage">90%</div>
+              <div class="skill-name">Management</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio">
+      <h2 class="sub-title font-cursive">Latest <span>Projects</span></h2>
+      <div class="portfolio-content">
+        <div class="row">
+          <img src="./imgs/Aquasence.png" alt="Aquasense" />
+          <div class="layer">
+            <h5>Aquasense</h5>
+            <p style="color: #211b46;">
+              Smart water quality monitoring system using Python and JS for
+              real-time analysis.
+            </p>
+            <a href="https://aquasence.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="row">
+          <img src="./imgs/ISchool.png" alt="ISchool" />
+          <div class="layer">
+            <h5>ISchool</h5>
+            <p style="color: #051129;">
+              Educational platform for kids featuring interactive courses and
+              enrollment management.
+            </p>
+            <a href="https://copy-ischool.netlify.app/" target="_blank"
+              ><i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </div>
+        </div>
+        <div class="row">
+          <img src="./imgs/CRUDS.png" alt="CRUDS" />
+          <div class="layer">
+            <h5>CRUDS System</h5>
+            <p>
+              Management application for efficient product tracking, inventory
+              control and data handling.
+            </p>
+            <a href="https://crudsforpm.netlify.app/" target="_blank"
+              ><i class="fa-solid fa-arrow-up-right-from-square"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="contact-text">
+        <h2 class="font-cursive">Contact <span style="color: #0ef;">Me</span></h2>
+        <h4
+          class="font-cursive"
+          style="color: #fff; font-size: 24px; margin-bottom: 20px"
+        >
+          Let's work together
+        </h4>
+        <ul class="contact-list">
+          <li>
+            <a href="mailto:ayaismailmahmoud2025@gmail.com"><i class="fa-solid fa-envelope" style="color: #0ef;"></i> ayaismailmahmoud2025@gmail.com</a>
+          </li>
+          <a href="https://wa.me/201151498440"><li><i class="fa-solid fa-phone" style="color: #0ef;"></i> +20 1151498440</li></a>
+        </ul>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/profile.php?id=100053460234290"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://wa.me/201151498440"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="http://www.linkedin.com/in/aya-ismail-a5a4102a7"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <div class="contact-form">
+        <form action="#">
+          <input type="text" placeholder="Your Full Name" required />
+          <input type="email" placeholder="Your Email Address" required />
+          <input type="text" placeholder="Subject" />
+          <textarea placeholder="Your Message Here..." required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p class="font-cursive">
+        Developed with love by
+        <span style="color: var(--main-color); font-weight: 700"
+          >Aya Ismail</span
+        >
+        &copy; 2025
+      </p>
+    </footer>
+
+    <!-- Scroll Up Button -->
+    <a href="#home" class="scroll-up" id="scroll-up"
+      ><i class="fa-solid fa-arrow-up"></i
+    ></a>
+    <script src="./script/main.js"></script>
+    <script src="./script/typed.min.js"></script>
+    <script src="./script/all.min.js"></script>
+    <script>
+      const links = document.querySelectorAll(".nav-link");
+
+      links.forEach((link) => {
+        link.addEventListener("click", function () {
+          links.forEach((l) => l.classList.remove("active"));
+          this.classList.add("active");
+        });
+      });
+      let sections = document.querySelectorAll("section");
+      let navLinks = document.querySelectorAll(".nav-link");
+
+      window.addEventListener("scroll", () => {
+        let current = "";
+
+        sections.forEach((section) => {
+          let sectionTop = section.offsetTop - 150;
+          let sectionHeight = section.clientHeight;
+
+          if (
+            pageYOffset >= sectionTop &&
+            pageYOffset < sectionTop + sectionHeight
+          ) {
+            current = section.getAttribute("id");
+          }
+        });
+
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href") === "#" + current) {
+            link.classList.add("active");
+          }
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", () => {
+        // 1. Typing Effect Logic
+        const typedTextElement = document.getElementById("typed-text");
+        const words = ["Frontend Developer", "Web Architect", "UI Enthusiast"];
+        let wordIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+        function typeEffect() {
+          if (!typedTextElement) return;
+
+          const currentWord = words[wordIndex];
+          if (isDeleting) {
+            typedTextElement.textContent = currentWord.substring(
+              0,
+              charIndex - 1
+            );
+            charIndex--;
+          } else {
+            typedTextElement.textContent = currentWord.substring(
+              0,
+              charIndex + 1
+            );
+            charIndex++;
+          }
+
+          if (!isDeleting && charIndex === currentWord.length) {
+            setTimeout(() => (isDeleting = true), 2000);
+          } else if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            wordIndex = (wordIndex + 1) % words.length;
+          }
+
+          const speed = isDeleting ? 60 : 150;
+          setTimeout(typeEffect, speed);
+        }
+        typeEffect();
+
+        // 2. Mobile Menu Logic
+        const menuIcon = document.getElementById("menu-icon");
+        const navbar = document.querySelector(".navbar");
+
+        if (menuIcon && navbar) {
+          menuIcon.addEventListener("click", () => {
+            menuIcon.classList.toggle("fa-xmark");
+            navbar.classList.toggle("active");
+          });
+        }
+
+        // 3. Scroll Spy & Animations Trigger
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll(".navbar a");
+        const scrollUpBtn = document.getElementById("scroll-up");
+
+        function animateSkills() {
+          const skillsSection = document.getElementById("skills");
+          if (!skillsSection) return;
+
+          const sectionPos = skillsSection.getBoundingClientRect().top;
+          const screenPos = window.innerHeight / 1.1;
+
+          if (sectionPos < screenPos) {
+            // Linear bars
+            document.querySelectorAll(".progress-line span").forEach((span) => {
+              span.style.width = span.getAttribute("data-width");
+            });
+
+            // Radial bars
+            document.querySelectorAll(".circle-progress").forEach((circle) => {
+              const percent = parseFloat(circle.getAttribute("data-percent"));
+              const radius = circle.r.baseVal.value;
+              const circumference = 2 * Math.PI * radius;
+              const offset = circumference - (percent / 100) * circumference;
+              circle.style.strokeDashoffset = offset;
+            });
+          }
+        }
+
+        window.addEventListener("scroll", () => {
+          let current = "";
+          sections.forEach((section) => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.clientHeight;
+            if (window.pageYOffset >= sectionTop - 250) {
+              current = section.getAttribute("id");
+            }
+          });
+
+          navLinks.forEach((link) => {
+            link.classList.remove("active");
+            if (link.getAttribute("href") === `#${current}`) {
+              link.classList.add("active");
+            }
+          });
+
+          // Scroll up button visibility
+          if (window.scrollY > 500) {
+            scrollUpBtn.classList.add("active");
+          } else {
+            scrollUpBtn.classList.remove("active");
+          }
+
+          // Close menu if scrolling
+          if (navbar.classList.contains("active")) {
+            navbar.classList.remove("active");
+            menuIcon.classList.remove("fa-xmark");
+          }
+
+          animateSkills();
+        });
+
+        // Close mobile menu on click
+        navLinks.forEach((link) => {
+          link.addEventListener("click", () => {
+            navbar.classList.remove("active");
+            menuIcon.classList.remove("fa-xmark");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

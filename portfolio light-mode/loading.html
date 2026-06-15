@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #211b46;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height:100vh; 
+            margin: 0;
+        }
+        .loader-112 {
+            margin: 0 auto;
+            font-size: 48px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 700;
+            color: #0ef;
+            position: relative;
+        }
+        .loader-112::before {
+            content: "";
+            position: absolute;
+            left: 30px;
+            bottom: 8px;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            border: 5px solid #14aab5;
+            border-bottom-color: #211b46;
+            -webkit-animation: rotation 0.6s linear infinite;
+            animation: rotation 0.6s linear infinite;
+        }
+        .loader-112::after {
+            content: "";
+            width: 5px;
+            height: 5px;
+            background: currentColor;
+            position: absolute;
+            bottom: 10px;
+            right: -5px;
+            -webkit-animation: animloader115 1s linear infinite;
+            animation: animloader115 1s linear infinite;
+        }
+        @keyframes rotation {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+        @keyframes animloader115 {
+            0% {
+                box-shadow: 10px 0 rgba(255, 255, 255, 0), 20px 0 rgba(255, 255, 255, 0);
+            }
+            50% {
+                box-shadow: 10px 0 #0ef, 20px 0 rgba(255, 255, 255, 0);
+            }
+            100% {
+                box-shadow: 10px 0 #0ef, 20px 0 #0ef;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section><span class="loader-112">L &nbsp;  ading      </span></section>
+    <script>
+        setTimeout(() => { window.location.href = "../index.html";}, 2000);
+    </script>
+</body>
+</html>
